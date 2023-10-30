@@ -1,0 +1,16 @@
+package proj_1019_extends;
+
+public class Point {
+	private int x; //접근지정자 무조건 쓸 것 default 쓰지 말 것.
+	private int y;
+	//전부 private을 기본으로 생각하고 필드 변수 선언할 것 
+	public Point() {
+		//기본 생성자 무조건 생성할 것 //초기화
+		x=0;
+		y=0;
+	}
+	
+	public int set(int x, int y) {
+		
+	}
+}

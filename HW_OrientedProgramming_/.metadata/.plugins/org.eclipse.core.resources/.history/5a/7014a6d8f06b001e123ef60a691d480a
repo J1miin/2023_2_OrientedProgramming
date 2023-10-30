@@ -1,0 +1,22 @@
+package hw2;
+
+public class Triangle {
+	public int iWidth;
+	public int iHeight;
+	public int iArea;
+	
+	public Triangle() {
+		//기본생성자
+	}
+	
+	public static int getArea() {
+		iArea = (iWidth * iHeight)/2;
+		return iArea;
+	}
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

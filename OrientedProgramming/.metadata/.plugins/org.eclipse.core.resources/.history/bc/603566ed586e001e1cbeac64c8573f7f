@@ -1,0 +1,11 @@
+package proj_1019_extends;
+
+public class Point {
+	int x, y;
+	public Point() {
+		//기본 생성자 무조건 생성할 것
+		//초기화
+		x=0;
+		y=0;
+	}
+}

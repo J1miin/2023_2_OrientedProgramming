@@ -1,0 +1,10 @@
+package proj_1019_extends;
+
+public class ColorPointEx {
+
+	public static void main(String[] args) {
+		Point oPoint;
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package proj_1019_extends;
+
+public class ColorPoint extends Point {
+
+}
