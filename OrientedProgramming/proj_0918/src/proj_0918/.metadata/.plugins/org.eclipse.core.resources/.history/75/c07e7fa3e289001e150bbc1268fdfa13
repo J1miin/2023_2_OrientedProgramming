@@ -1,0 +1,52 @@
+package cafe_collection;
+import java.util.HashMap;
+//클래스는 데이터를 공통으로 사용하는 메서드를 하나로 묶어주는데 쓰려고 사용한다. 
+import java.util.Scanner;
+
+public class Cafe {
+	
+	public static void main(String[] args) {
+		String sInputMenu;
+		int menuPrice;
+		int totalPrice;
+		int iAmount;
+		totalPrice=0;
+		
+		Scanner scanner = new Scanner(System.in);
+		HashMap<String, Integer> menuWithPrice = new HashMap<String, Integer>();
+		menuWithPrice.put("에스프레소", 1500);
+		menuWithPrice.put("아메리카노", 2000);
+		menuWithPrice.put("라떼", 2500);
+		menuWithPrice.put("아이스티", 3000);
+		OneOrder oOneOrder = new OneOrder();
+		
+		while (true) {
+			System.out.print("메뉴를 입력하세요 : (주문완료시 끝 입력)>> ");
+			sInputMenu=scanner.next();
+			if(sInputMenu.equals("끝")) {
+				break;
+			}else {
+				menuPrice = menuWithPrice.get(sInputMenu);
+				//해쉬로 가격 찾기 
+				System.out.print("수량을 입력하세요 : ");
+				iAmount=scanner.nextInt();
+				
+				oOneOrder.saveItem(sInputMenu,menuPrice,iAmount);
+			}
+		}
+		
+		//출력하기
+		oOneOrder.printItem();
+		
+		
+		
+		System.out.print("총 매출은 " + totalPrice + "원 입니다.");
+		
+		scanner.close();
+			
+	}
+
+}
+
+
+//이건 지금 한 사람이 구매하는 개수가 되는데, 만약 사람이 많아진다면,?? like 구조체 -> collection을 쓴다! 

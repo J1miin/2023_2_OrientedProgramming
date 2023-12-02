@@ -1,0 +1,21 @@
+package cafe_collection;
+
+public class OneItem {
+	private String menu;
+	private int iPrice;
+	private int iAmount;
+	
+	public OneItem(String menu, int iPrice,int iAmount) {
+		this.iPrice=iPrice;
+		this.menu = menu;
+		this.iAmount = iAmount;
+	}
+	
+	public void printItem() {
+		System.out.println(menu +" "+ iAmount + " "+ iPrice);
+	}
+	public int oneLinePrice() {
+		int linePrice = iAmount * iPrice;
+		return linePrice;
+	}
+}

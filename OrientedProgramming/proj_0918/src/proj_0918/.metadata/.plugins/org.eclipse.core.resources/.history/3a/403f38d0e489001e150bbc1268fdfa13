@@ -1,0 +1,39 @@
+package cafe_collection;
+
+import java.util.Iterator;
+import java.util.Vector;
+
+public class OneOrder {
+	private Vector<OneItem> oVector;
+	private Iterator<OneItem> it;
+	private int totalPrice = 0;
+	
+	public OneOrder() {
+		oVector = new Vector<OneItem>();
+		
+	}
+	
+	public void saveItem(String menu, int iPrice,int iAmount) {
+		OneItem oOneLine = new OneItem(menu,iPrice,iAmount);
+		oVector.add(oOneLine);
+	}
+	
+	public void printItem() {	
+		it = oVector.iterator();
+		while (it.hasNext()){//다음요소 반환
+			OneItem n = it.next();
+			n.printItem();
+		}
+	}
+	
+	public int totalPrice() {
+		it = oVector.iterator();
+		while (it.hasNext()){//다음요소 반환
+			OneItem n = it.next();
+			totalPrice = n.oneLinePrice();
+		}
+		return totalPrice;
+	}
+	
+	
+}

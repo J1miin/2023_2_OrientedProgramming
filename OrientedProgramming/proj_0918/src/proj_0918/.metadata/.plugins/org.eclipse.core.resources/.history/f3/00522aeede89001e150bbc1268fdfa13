@@ -1,0 +1,14 @@
+package cafe_collection;
+
+import java.util.Vector;
+
+public class OneOrder {
+	private Vector<> oVector;
+	public OneOrder() {
+		oVector<> = new Vector<>();
+	}
+	public void saveItem() {
+		oVector.add(menu);
+	}
+	
+}

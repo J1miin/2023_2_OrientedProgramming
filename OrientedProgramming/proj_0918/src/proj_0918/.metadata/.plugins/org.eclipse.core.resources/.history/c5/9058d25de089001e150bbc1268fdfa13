@@ -1,0 +1,15 @@
+package cafe_collection;
+
+public class OrderInfo {
+	private String menu;
+	private int iPrice;
+	private int iAmount;
+	
+	
+	public OrderInfo(String menu, int iPrice,int iAmount) {
+		this.iPrice=iPrice;
+		this.menu = menu;
+		this.iAmount = iAmount;
+	}
+	
+}

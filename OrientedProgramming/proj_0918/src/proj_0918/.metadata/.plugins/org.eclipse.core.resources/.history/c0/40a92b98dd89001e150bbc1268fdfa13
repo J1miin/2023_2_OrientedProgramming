@@ -1,0 +1,12 @@
+package cafe_collection;
+
+public class Order {
+	private String menu;
+	private int iPrice;
+	private int iAmount;
+	
+	public Order(String menu, int iAmount) {
+		this.menu = menu;
+		this.iAmount = iAmount;
+	}
+}
