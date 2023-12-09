@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;max&apos; in &apos;proj_0925.Lotto_pf.main(...)&apos; to &apos;min&apos;&#x0A;- Original project: &apos;proj_0925&apos;&#x0A;- Original element: &apos;proj_0925.Lotto_pf.main(String[]).max&apos;&#x0A;- Renamed element: &apos;max&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;max&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;proj_0925{Lotto_pf.java[Lotto_pf~main~\[QString;@max!800!820!804!806!I!0!false" name="min" references="true" stamp="1696411823130" version="1.0"/>
-</session>

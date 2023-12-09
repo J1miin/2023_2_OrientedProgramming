@@ -1,7 +1,0 @@
-package proj_1019_extends;
-
-public class ColorPoint extends Point {
-	public ColorPoint() {
-		//기본생성자 
-	}
-}
